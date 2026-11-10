@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interview Buddy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="blobs"><i></i><i></i><i></i></div>
+
+  <header class="top">
+    <div class="logo">🎓 Interview<span>Buddy</span></div>
+    <div class="stats" id="stats" hidden>
+      <span class="pill">⭐ <b id="xp">0</b> XP</span>
+      <span class="pill">🔥 <b id="streak">0</b> streak</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- SETUP -->
+    <section id="setup" class="screen">
+      <div class="hero">
+        <div class="buddy big" id="buddyHero"><div class="eyes"><b></b><b></b></div><div class="mouth"></div></div>
+        <div>
+          <h1>Hey! I'm <span class="grad">Buddy</span> 👋</h1>
+          <p>Pick your dream company and role. I'll interview you with <em>real</em> questions from past drives and coach you with <em>real</em> feedback.</p>
+        </div>
+      </div>
+
+      <h3>1. Choose a company</h3>
+      <div class="cards" id="companies"></div>
+
+      <h3>2. Choose a role</h3>
+      <div class="chips" id="roles"><span class="muted">Pick a company first…</span></div>
+
+      <h3>3. How many questions?</h3>
+      <div class="chips" id="counts"></div>
+
+      <button class="go" id="startBtn" disabled>Let's go! 🚀</button>
+      <p class="muted" id="modeNote"></p>
+    </section>
+
+    <!-- INTERVIEW -->
+    <section id="chat" class="screen" hidden>
+      <aside class="side">
+        <div class="buddy" id="buddy"><div class="eyes"><b></b><b></b></div><div class="mouth"></div></div>
+        <div class="bubble" id="buddySays">Ready when you are!</div>
+        <div class="who" id="who"></div>
+        <div class="bar"><div id="barFill"></div></div>
+        <div class="muted" id="barText"></div>
+        <div class="quick">
+          <button data-say="hint">💡 Hint</button>
+          <button data-say="skip">⏭ Skip</button>
+          <button data-say="Coach me on what this company looks for">🧑‍🏫 Coach me</button>
+          <button data-say="How did I score?">📊 My score</button>
+          <button data-say="finish">🏁 Finish</button>
+        </div>
+      </aside>
+
+      <div class="panel">
+        <div class="log" id="log"></div>
+        <form id="form">
+          <textarea id="input" rows="2" placeholder="Type your answer… (Enter to send, Shift+Enter for a new line)"></textarea>
+          <button type="submit" id="send">Send ✈️</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- REPORT -->
+    <section id="reportScreen" class="screen" hidden>
+      <div id="report"></div>
+    </section>
+  </main>
+
+  <canvas id="confetti"></canvas>
+  <script src="app.js"></script>
+</body>
+</html>

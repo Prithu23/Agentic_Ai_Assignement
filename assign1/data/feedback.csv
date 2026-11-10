@@ -1,0 +1,51 @@
+id,company,role,round,feedback_text,outcome
+F001,TCS,Software Engineer,Technical,Strong fundamentals in OOP and DBMS but could not explain overloading versus overriding with an example.,Selected
+F002,TCS,Software Engineer,Technical,Knew the definitions but struggled to explain concepts in simple words. Needs to give real-life examples.,On hold
+F003,TCS,Software Engineer,HR,Communication was clear and confident. Showed willingness to relocate and work in any shift.,Selected
+F004,TCS,Software Engineer,HR,Gave a memorised answer for tell me about yourself with no link to the role. Had not researched TCS.,Rejected
+F005,TCS,Software Engineer,Technical,Could not explain own project clearly. Unsure about personal contribution and the tech stack used.,Rejected
+F006,TCS,Software Engineer,Coding,Solved the palindrome problem correctly but did not consider edge cases such as an empty string.,Selected
+F007,Infosys,Systems Engineer,Technical,Good conceptual clarity on Agile and SDLC. Answers were structured and well explained.,Selected
+F008,Infosys,Systems Engineer,Technical,Gave correct SQL join definitions but could not write the query on the spot. Needs more hands-on practice.,Rejected
+F009,Infosys,Systems Engineer,Aptitude,Understood the approach but was too slow in calculation. Needs to practise speed on aptitude problems.,On hold
+F010,Infosys,Systems Engineer,HR,Behavioural answers lacked specific examples. Answered in generalities instead of describing a real situation.,Rejected
+F011,Infosys,Systems Engineer,Technical,Explained the project well and justified technology choices. Good communication.,Selected
+F012,Infosys,Systems Engineer,Coding,Gave a brute-force solution for finding duplicates and did not optimise to a hash set even after a hint.,On hold
+F013,Flipkart,SDE-1,Coding,Reached the optimal Two Sum solution quickly and explained time and space complexity clearly.,Selected
+F014,Flipkart,SDE-1,Coding,Started coding immediately without clarifying the problem or edge cases. Corrected only after prompting.,Rejected
+F015,Flipkart,SDE-1,Coding,Could not analyse the time complexity of own solution. Needs to practise stating Big-O unprompted.,Rejected
+F016,Flipkart,SDE-1,System Design,Jumped to a solution without estimating scale or listing requirements. Weak on trade-offs such as SQL versus NoSQL.,Rejected
+F017,Flipkart,SDE-1,System Design,"Structured the URL shortener design well: requirements, API, storage and scaling. Discussed trade-offs clearly.",Selected
+F018,Flipkart,SDE-1,Managerial,Showed ownership in the project example but answers rambled. Needs a structured format such as STAR.,On hold
+F019,Google,Software Engineer,Coding,Thought out loud and explained the approach before coding. Handled hints well.,Selected
+F020,Google,Software Engineer,Coding,Correct solution but long silent pauses. Interviewer could not follow the thought process.,Rejected
+F021,Google,Software Engineer,Coding,Did not test the code with examples after writing it and missed an off-by-one bug.,Rejected
+F022,Google,Software Engineer,Technical,Solid explanation of quicksort but could not describe the worst case or how to avoid it.,On hold
+F023,Google,Software Engineer,System Design,Good high-level design but did not discuss failure handling or scaling bottlenecks.,On hold
+F024,Google,Software Engineer,Googleyness,Strong collaboration example with a clear outcome. Showed openness to other viewpoints.,Selected
+F025,Microsoft,Software Engineer,Coding,"Clarified the problem, discussed brute force first, then optimised to O(n) with O(1) space. Tested with examples before finishing.",Selected
+F026,Microsoft,Software Engineer,Coding,Struggled to keep operations at O(1) in the LRU cache and did not justify the choice of data structures.,Rejected
+F027,Microsoft,Software Engineer,Technical,Knew the definitions of mutex and semaphore but could not give a real use case or explain deadlock risk.,On hold
+F028,Microsoft,Software Engineer,Technical,Design lacked clear classes and relationships. Jumped into code before identifying the entities.,Rejected
+F029,Microsoft,Software Engineer,Behavioral,Gave a specific and honest example of acting on critical feedback and showed a growth mindset.,Selected
+F030,Microsoft,Software Engineer,Behavioral,Answers were vague and focused on the team rather than the candidate's own actions. Needs to say I instead of we.,On hold
+F031,Nvidia,Software Engineer,Coding,Solved the linked list group reversal cleanly and handled leftover nodes without hints.,Selected
+F032,Nvidia,Software Engineer,Coding,Could not recall the union-find step in Kruskal's algorithm and could not improve beyond brute force.,Rejected
+F033,Nvidia,Software Engineer,Technical,Weak on C and C++ fundamentals. Could not predict constructor and destructor order or explain function pointers.,Rejected
+F034,Nvidia,Software Engineer,Technical,Good DSA but little understanding of how GPUs differ from CPUs. Should study NVIDIA products and parallel computing basics.,On hold
+F035,Nvidia,Software Engineer,Logical,Reasoned through the logic puzzle step by step and explained the strategy clearly.,Selected
+F036,Nvidia,Software Engineer,Coding,"Reached a dynamic programming solution only after hints. Needs more practice on DP, tries and graphs.",On hold
+F037,Amazon,SDE-1,Coding,Used multi-source BFS correctly for the grid problem and explained complexity without being asked.,Selected
+F038,Amazon,SDE-1,Coding,Did not test edge cases such as an empty grid or no valid answer. Code failed on a simple input.,Rejected
+F039,Amazon,SDE-1,Behavioral,"Behavioural answers did not map to leadership principles. No measurable results, and we was used throughout.",Rejected
+F040,Amazon,SDE-1,Behavioral,Gave structured STAR answers with concrete numbers and clear personal ownership.,Selected
+F041,Amazon,SDE-1,System Design,Reasonable high-level design but skipped caching and scaling discussion.,On hold
+F042,Amazon,SDE-1,Technical,Explained SOLID principles in theory but could not give a code or design example.,On hold
+F043,Amazon,Data Scientist,Technical,Explained bias-variance clearly with an example and linked it to model choice.,Selected
+F044,Amazon,Data Scientist,Technical,Used accuracy as the metric for an imbalanced problem and could not justify the choice.,Rejected
+F045,Amazon,Data Scientist,Technical,Knew the definition of a p-value but could not design the A/B test including sample size and duration.,Rejected
+F046,Amazon,Data Scientist,Technical,SQL logic was right but needed several attempts to use a window function correctly.,On hold
+F047,Google,Software Engineer,Coding,Identified the sorted half quickly in the rotated array search and handled duplicates.,Selected
+F048,Google,Software Engineer,Coding,Started coding the window problem without discussing the approach or complexity first.,Rejected
+F049,Google,Software Engineer,Technical,Web crawler design ignored politeness and duplicate URL detection.,Rejected
+F050,Google,Software Engineer,Googleyness,Showed genuine enthusiasm for mentoring and gave a concrete example of helping a teammate.,Selected
