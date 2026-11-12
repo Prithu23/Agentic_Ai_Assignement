@@ -1,6 +1,6 @@
 const $ = (id) => document.getElementById(id);
 const EMOJI = { Amazon: "📦", Google: "🔍", Microsoft: "🪟", Flipkart: "🛒", Infosys: "🏢", TCS: "💼", Nvidia: "🎮" };
-const COLORS = { correctness: "#2ed8a3", depth: "#35b6ff", communication: "#ff5fa2", overall: "#7c5cff" };
+const COLORS = { correctness: "#5ee6a8", depth: "#7ad7ff", communication: "#ff8fc7", overall: "#b79cff" };
 
 let options = {}, company = null, role = null, num = 5;
 let sid = null, xp = 0, streak = 0, busy = false;
@@ -16,9 +16,6 @@ async function api(path, body) {
 async function init() {
   const data = await api("/api/options");
   options = data.options;
-  $("modeNote").textContent = data.llm
-    ? `🧠 AI mode: answers are scored by ${{ ollama: "your local Ollama model", gemini: "Gemini", anthropic: "Claude" }[data.provider]}.`
-    : "⚡ Offline mode: no LLM found, so scoring uses keyword matching. Start Ollama or add ANTHROPIC_API_KEY to .env for smarter feedback.";
   $("companies").innerHTML = "";
   Object.keys(options).forEach((c) => {
     const d = document.createElement("div");
@@ -244,7 +241,7 @@ function section(cls, title, items, empty, ordered) {
 function confetti() {
   const c = $("confetti"), ctx = c.getContext("2d");
   c.width = innerWidth; c.height = innerHeight;
-  const cols = ["#ff5fa2", "#7c5cff", "#35b6ff", "#2ed8a3", "#ffc933", "#ff8a3d"];
+  const cols = ["#ff8fc7", "#b79cff", "#7ad7ff", "#5ee6a8", "#ffdd33", "#ff9f45"];
   const ps = Array.from({ length: 140 }, () => ({
     x: Math.random() * c.width, y: -20 - Math.random() * c.height * 0.4, r: 4 + Math.random() * 6,
     vx: Math.random() * 4 - 2, vy: 2 + Math.random() * 4, a: Math.random() * 6, col: cols[(Math.random() * cols.length) | 0],
@@ -260,4 +257,4 @@ function confetti() {
   })();
 }
 
-init().catch((e) => ($("modeNote").textContent = "Can't reach the server: " + e.message));
+init().catch((e) => alert("Can't reach the server: " + e.message));

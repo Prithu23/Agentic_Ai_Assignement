@@ -1,0 +1,9 @@
+chromadb
+pandas
+flask
+python-dotenv
+langchain
+langchain-core
+langchain-anthropic
+langchain-ollama
+langchain-google-genai
